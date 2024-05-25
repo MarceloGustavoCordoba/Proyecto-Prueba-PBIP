@@ -10,12 +10,13 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.129.905.0 (24.05)
 
-annotation PBI_QueryOrder = ["Meses","Hudson Cocina - GA4"]
+annotation PBI_QueryOrder = ["Meses","Hudson Cocina - GA4","fen_ordenes"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Meses
 ref table 'Hudson Cocina - GA4'
+ref table fen_ordenes
 
 ref cultureInfo es-AR
 

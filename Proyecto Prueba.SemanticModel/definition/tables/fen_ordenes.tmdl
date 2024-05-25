@@ -1,0 +1,732 @@
+table fen_ordenes
+	lineageTag: 90fa3bad-a4ee-44eb-84aa-6cbe8fd6a2ac
+
+	column idOrden
+		dataType: string
+		lineageTag: e95ce142-d2ed-478a-8666-4697c264c081
+		summarizeBy: none
+		sourceColumn: idOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	column idOrdenOrigen
+		dataType: string
+		lineageTag: d22f027b-e099-460a-ae88-dd02cbe11ff2
+		summarizeBy: none
+		sourceColumn: idOrdenOrigen
+
+		annotation SummarizationSetBy = Automatic
+
+	column numeroOrden
+		dataType: int64
+		formatString: 0
+		lineageTag: c3ea841c-c1d5-4957-a356-c7ac6075e5cf
+		summarizeBy: sum
+		sourceColumn: numeroOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	column referencia
+		dataType: string
+		lineageTag: 70e64671-d78d-475e-b1d0-207af8401987
+		summarizeBy: none
+		sourceColumn: referencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: bf7c5952-c9e0-4ae4-9816-4a883b6093a1
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column motivoCancelacion
+		dataType: string
+		lineageTag: a44656f2-f4cf-47c9-8fc4-6731d335965c
+		summarizeBy: none
+		sourceColumn: motivoCancelacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column origen
+		dataType: string
+		lineageTag: f0707676-ebeb-4f82-a5cf-3e6b5d684dea
+		summarizeBy: none
+		sourceColumn: origen
+
+		annotation SummarizationSetBy = Automatic
+
+	column fechaInicio
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5ea166a2-400e-4b63-9359-d7e228e063e1
+		summarizeBy: none
+		sourceColumn: fechaInicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column fechaAbandono
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 291e94ff-70dd-4653-9b22-671f965cc00a
+		summarizeBy: none
+		sourceColumn: fechaAbandono
+
+		annotation SummarizationSetBy = Automatic
+
+	column fechaRecuperada
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f4c906e8-b81a-464b-822c-c206fba703ac
+		summarizeBy: none
+		sourceColumn: fechaRecuperada
+
+		annotation SummarizationSetBy = Automatic
+
+	column fechaFin
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7a481629-76b3-485a-97e7-8e1faa57cb6d
+		summarizeBy: none
+		sourceColumn: fechaFin
+
+		annotation SummarizationSetBy = Automatic
+
+	column fechaCancelada
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 71d92d88-669e-4e31-a4a8-6f038ac01baf
+		summarizeBy: none
+		sourceColumn: fechaCancelada
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion
+		dataType: double
+		lineageTag: b12ebc17-2aed-4200-8ae3-beb769827ccc
+		summarizeBy: sum
+		sourceColumn: direccionFacturacion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column codigoTributario
+		dataType: string
+		lineageTag: 01083f8c-07c5-4cbe-aa26-8768dbfb5cea
+		summarizeBy: none
+		sourceColumn: codigoTributario
+
+		annotation SummarizationSetBy = Automatic
+
+	column razonSocial
+		dataType: string
+		lineageTag: ec7df7da-4c6f-4c95-8127-1cf13a1c7b05
+		summarizeBy: none
+		sourceColumn: razonSocial
+
+		annotation SummarizationSetBy = Automatic
+
+	column moneda
+		dataType: string
+		lineageTag: a603f99f-b299-46dc-ad15-baec0d83f1b2
+		summarizeBy: none
+		sourceColumn: moneda
+
+		annotation SummarizationSetBy = Automatic
+
+	column impuestos
+		dataType: double
+		lineageTag: ae91717b-91ef-4d65-8061-bd4961eb1ddc
+		summarizeBy: sum
+		sourceColumn: impuestos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column importeTotal
+		dataType: double
+		lineageTag: 308a66a9-9483-4e8b-8fcd-0e8817eae0e9
+		summarizeBy: sum
+		sourceColumn: importeTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column observaciones
+		dataType: string
+		lineageTag: 0280618a-6b75-4e40-8536-96d980dc1c31
+		summarizeBy: none
+		sourceColumn: observaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column historialCallCenter
+		dataType: string
+		lineageTag: d36a8a6c-a7d7-4a15-aeac-9b14b7f153e0
+		summarizeBy: none
+		sourceColumn: historialCallCenter
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c6924c55-bbe7-4db5-a6a5-5e2205e02f06
+		summarizeBy: sum
+		sourceColumn: comprador_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_codigo
+		dataType: string
+		lineageTag: 4d5e094c-08a1-43ec-b1b0-deb06f7a613f
+		summarizeBy: none
+		sourceColumn: comprador_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_email
+		dataType: string
+		lineageTag: 2d2110d8-982b-4842-a50c-a2c6083e0bd1
+		summarizeBy: none
+		sourceColumn: comprador_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_nombre
+		dataType: string
+		lineageTag: ddbe63f2-fce8-42a0-8cf4-5e9e71cdfa41
+		summarizeBy: none
+		sourceColumn: comprador_nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_apellido
+		dataType: string
+		lineageTag: 8c572ed6-0d53-4de1-8409-6516a3c99b53
+		summarizeBy: none
+		sourceColumn: comprador_apellido
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_telefono
+		dataType: string
+		lineageTag: 0b79b5a5-a5d9-4f31-8829-fcddd8a89c9c
+		summarizeBy: none
+		sourceColumn: comprador_telefono
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_genero
+		dataType: string
+		lineageTag: 3b3545d2-717c-4a4a-91f0-b1a6d63248bc
+		summarizeBy: none
+		sourceColumn: comprador_genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_documento_numero
+		dataType: string
+		lineageTag: b347a375-f14f-49e4-b014-8b4c7b8fb2a0
+		summarizeBy: none
+		sourceColumn: comprador_documento_numero
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_documento_pais
+		dataType: string
+		lineageTag: b88378b6-5c90-4915-b364-1e9c7316cd13
+		summarizeBy: none
+		sourceColumn: comprador_documento_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_documento_tipo
+		dataType: string
+		lineageTag: 24a1ece3-e19f-4b10-82f3-2df6d81f169a
+		summarizeBy: none
+		sourceColumn: comprador_documento_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column comprador_extras
+		dataType: string
+		lineageTag: 6b80065c-cbb3-4a9e-b4bf-268d93526b86
+		summarizeBy: none
+		sourceColumn: comprador_extras
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_id
+		dataType: double
+		lineageTag: bc50b766-4058-4ee4-af2a-f05f9f6d5ae1
+		summarizeBy: sum
+		sourceColumn: pago_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pago_idExterno
+		dataType: string
+		lineageTag: f8412f7c-dbb5-47ce-978e-aa3698c38d96
+		summarizeBy: none
+		sourceColumn: pago_idExterno
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_codigo
+		dataType: string
+		lineageTag: 54daef81-72fe-43d3-a962-c2142cf9b300
+		summarizeBy: none
+		sourceColumn: pago_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_conector
+		dataType: string
+		lineageTag: c898f12b-509a-418f-951b-0cb8ab4dd5c3
+		summarizeBy: none
+		sourceColumn: pago_conector
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_estado
+		dataType: string
+		lineageTag: 5892499e-aa9e-4c1b-ad05-21bb5cbef548
+		summarizeBy: none
+		sourceColumn: pago_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_fechaVencimiento
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ea1bcab6-38b8-4f9d-bf03-fe92ad685bb7
+		summarizeBy: none
+		sourceColumn: pago_fechaVencimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_fechaPago
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 40388430-2292-4e3e-9ae4-580dc7795714
+		summarizeBy: none
+		sourceColumn: pago_fechaPago
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_fechaCancelacion
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e9141572-76eb-42b6-850b-3cad0af633f2
+		summarizeBy: none
+		sourceColumn: pago_fechaCancelacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_cuotas
+		dataType: double
+		lineageTag: f86a9a37-aa76-49fc-b40d-e802386ee520
+		summarizeBy: sum
+		sourceColumn: pago_cuotas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pago_importe
+		dataType: double
+		lineageTag: ebd2b729-a94a-44d1-9879-1d9d179ad3fb
+		summarizeBy: sum
+		sourceColumn: pago_importe
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pago_moneda
+		dataType: string
+		lineageTag: e7254b90-5699-4223-af64-2482ef2b6f9e
+		summarizeBy: none
+		sourceColumn: pago_moneda
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_bin
+		dataType: string
+		lineageTag: 89367583-8eb1-40e6-a817-4cde955b6106
+		summarizeBy: none
+		sourceColumn: pago_bin
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_autorizacion
+		dataType: string
+		lineageTag: 38d6d80e-94d2-49bd-b942-ae6b2c6109c8
+		summarizeBy: none
+		sourceColumn: pago_autorizacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_numeroTarjeta
+		dataType: string
+		lineageTag: 96c4fa39-98a7-4c76-a386-6669b7c5a4a7
+		summarizeBy: none
+		sourceColumn: pago_numeroTarjeta
+
+		annotation SummarizationSetBy = Automatic
+
+	column pago_terminacionTarjeta
+		dataType: string
+		lineageTag: 47225332-d4c2-419f-8c7e-a680c69186c4
+		summarizeBy: none
+		sourceColumn: pago_terminacionTarjeta
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_tipo
+		dataType: string
+		lineageTag: 34733fce-a8ce-4b79-a6d2-26079a4a2ade
+		summarizeBy: none
+		sourceColumn: entrega_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_estado
+		dataType: string
+		lineageTag: b7d95b72-f99e-419f-93dc-31bb31fdefb1
+		summarizeBy: none
+		sourceColumn: entrega_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_horario
+		dataType: string
+		lineageTag: 48e82cba-ad5f-43cf-a43e-00b8a95befd0
+		summarizeBy: none
+		sourceColumn: entrega_horario
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_destinatario
+		dataType: string
+		lineageTag: 3d291c73-afcb-452d-8052-0b76e78aaa22
+		summarizeBy: none
+		sourceColumn: entrega_destinatario
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_latitud
+		dataType: double
+		lineageTag: c8de5096-be5f-47f3-898c-b184781a6bef
+		summarizeBy: sum
+		sourceColumn: entrega_direccionEnvio_latitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_direccionEnvio_longitud
+		dataType: double
+		lineageTag: f6a2f6da-ef20-4718-bbf8-a9fcee1e318d
+		summarizeBy: sum
+		sourceColumn: entrega_direccionEnvio_longitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_direccionEnvio_pais
+		dataType: string
+		lineageTag: c71ffd8f-0fa6-411a-bc76-8abf60664049
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_estado
+		dataType: string
+		lineageTag: d10ba68b-5936-4efc-a4e4-46263b8dd5f3
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_localidad
+		dataType: string
+		lineageTag: 43a05539-bab0-4f6e-82ad-39fb9d8a793e
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_localidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_calle
+		dataType: string
+		lineageTag: 42333cac-a84f-4158-a6fe-7c9b50987f45
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_calle
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_numeroPuerta
+		dataType: string
+		lineageTag: 4cd48d19-31a8-4a0a-94de-8ba026942e7d
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_numeroPuerta
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_numeroApto
+		dataType: string
+		lineageTag: a440c977-5ba7-46ec-9283-a314716f114d
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_numeroApto
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_codigoPostal
+		dataType: string
+		lineageTag: cc261e23-8e9d-44d5-88d1-00f49a46dc26
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_codigoPostal
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_direccionEnvio_observaciones
+		dataType: string
+		lineageTag: d8928f2b-41e4-4777-97b8-0043c5145593
+		summarizeBy: none
+		sourceColumn: entrega_direccionEnvio_observaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_local
+		dataType: string
+		lineageTag: 29328cc7-53a9-496d-9a95-1b26fea45460
+		summarizeBy: none
+		sourceColumn: entrega_local
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_servicioEntrega_id
+		dataType: double
+		lineageTag: a470c9f1-3775-48d4-92e8-420c5b06c8dd
+		summarizeBy: sum
+		sourceColumn: entrega_servicioEntrega_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_servicioEntrega_codigo
+		dataType: double
+		lineageTag: 494440f6-758c-472f-893a-ecdb289b1963
+		summarizeBy: sum
+		sourceColumn: entrega_servicioEntrega_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_servicioEntrega_nombre
+		dataType: string
+		lineageTag: f4ad2c85-817f-435c-a6c8-7f7200e443bf
+		summarizeBy: none
+		sourceColumn: entrega_servicioEntrega_nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_codigoTracking
+		dataType: string
+		lineageTag: a9574db2-c0ec-4028-80b1-be0d496afc48
+		summarizeBy: none
+		sourceColumn: entrega_codigoTracking
+
+		annotation SummarizationSetBy = Automatic
+
+	column entrega_etiqueta
+		dataType: string
+		lineageTag: e5f505d0-922f-4d1a-8451-2de985c320e0
+		summarizeBy: none
+		sourceColumn: entrega_etiqueta
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_latitud
+		dataType: double
+		lineageTag: 8b088f38-2676-4b05-9e0d-7dd7a94dca85
+		summarizeBy: sum
+		sourceColumn: direccionFacturacion_latitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column direccionFacturacion_longitud
+		dataType: double
+		lineageTag: a35821de-5c44-4858-834c-68022b03e590
+		summarizeBy: sum
+		sourceColumn: direccionFacturacion_longitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column direccionFacturacion_pais
+		dataType: string
+		lineageTag: 98c4582d-2d32-41c9-80cb-1622deea155d
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_estado
+		dataType: string
+		lineageTag: 683c33d0-50c4-4164-adc8-e1b99c4c3b27
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_localidad
+		dataType: string
+		lineageTag: 1fbe1df7-e38f-490b-8006-feaef34163ce
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_localidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_calle
+		dataType: string
+		lineageTag: 34cf91f1-0bf0-45c2-ba28-9dbdcf5a3b83
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_calle
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_numeroPuerta
+		dataType: string
+		lineageTag: 2bf39047-5801-41ff-812b-311658f7609f
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_numeroPuerta
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_numeroApto
+		dataType: string
+		lineageTag: bd52d312-2e14-43c8-aecd-0f84a0ac7d74
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_numeroApto
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_codigoPostal
+		dataType: string
+		lineageTag: 6332d51f-a09b-4dc1-9552-c745c34f5221
+		summarizeBy: none
+		sourceColumn: direccionFacturacion_codigoPostal
+
+		annotation SummarizationSetBy = Automatic
+
+	column direccionFacturacion_observaciones
+		dataType: double
+		lineageTag: a28b02ba-cbd7-45ed-9d1e-1c2ed93cc88b
+		summarizeBy: sum
+		sourceColumn: direccionFacturacion_observaciones
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pago
+		dataType: double
+		lineageTag: 7e747f68-89e9-41f2-a187-8dada8e992cf
+		summarizeBy: sum
+		sourceColumn: pago
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column comprador_documento
+		dataType: double
+		lineageTag: 05b54aad-6cea-4ea2-8ec2-56d6aa28e561
+		summarizeBy: sum
+		sourceColumn: comprador_documento
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_direccionEnvio
+		dataType: double
+		lineageTag: 3256ac26-e94a-4363-8b43-f26554b51701
+		summarizeBy: sum
+		sourceColumn: entrega_direccionEnvio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column entrega_servicioEntrega
+		dataType: double
+		lineageTag: 97b8bd5c-9511-464c-aa61-7fcf42435d2b
+		summarizeBy: sum
+		sourceColumn: entrega_servicioEntrega
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vendedor
+		dataType: int64
+		formatString: 0
+		lineageTag: 2404c566-8308-4bd3-a65e-40a8380fc88f
+		summarizeBy: sum
+		sourceColumn: vendedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_update
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c9f7ec90-8036-4220-8174-5f778d8d1718
+		summarizeBy: none
+		sourceColumn: last_update
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha Orden'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 46a89542-0ac4-4bd6-8e59-71237b0453e1
+		summarizeBy: none
+		sourceColumn: Fecha Orden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition fen_ordenes = m
+		mode: import
+		source =
+				let
+				    Origen = PowerPlatform.Dataflows(null),
+				    Workspaces = Origen{[Id="Workspaces"]}[Data],
+				    #"f4965ca4-e723-4d97-a6a7-359173945f66" = Workspaces{[workspaceId="f4965ca4-e723-4d97-a6a7-359173945f66"]}[Data],
+				    #"2bd217e8-6654-4744-9f7e-ac04e33d170e" = #"f4965ca4-e723-4d97-a6a7-359173945f66"{[dataflowId="2bd217e8-6654-4744-9f7e-ac04e33d170e"]}[Data],
+				    fen_ordenes_ = #"2bd217e8-6654-4744-9f7e-ac04e33d170e"{[entity="fen_ordenes",version=""]}[Data]
+				in
+				    fen_ordenes_
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
