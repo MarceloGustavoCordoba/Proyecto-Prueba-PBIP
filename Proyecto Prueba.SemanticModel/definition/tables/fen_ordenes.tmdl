@@ -714,6 +714,15 @@ table fen_ordenes
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column Mes = DATE(YEAR(fen_ordenes[Fecha Orden]),MONTH(fen_ordenes[Fecha Orden]),1)
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0ba0d763-f061-452b-a598-352dd2b658bc
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fen_ordenes = m
 		mode: import
 		source =

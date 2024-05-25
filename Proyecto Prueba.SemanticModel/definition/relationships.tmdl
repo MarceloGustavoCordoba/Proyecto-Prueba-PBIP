@@ -2,3 +2,7 @@ relationship 471073ed-6561-7e92-131f-f2482c4a1c4c
 	fromColumn: 'Hudson Cocina - GA4'.Mes
 	toColumn: Meses.Mes_Fecha
 
+relationship b8d49821-1843-0412-7e05-e315c1327212
+	fromColumn: fen_ordenes.Mes
+	toColumn: Meses.Mes_Fecha
+
