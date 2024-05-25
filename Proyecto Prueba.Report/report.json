@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0c9a8779b70034274851",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"915fd3464843a10022ed\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":640,\"height\":359.8222222222222,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Meses.Mes_Fecha\"}],\"Y\":[{\"queryRef\":\"Sum(Hudson Cocina - GA4.sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Meses\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"Hudson Cocina - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Mes_Fecha\"},\"Name\":\"Meses.Mes_Fecha\",\"NativeReferenceName\":\"Mes_Fecha\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(Hudson Cocina - GA4.sessions)\",\"NativeReferenceName\":\"Suma de sessions\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Mes_Fecha\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 359.82,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"929f3a1a8dc005855917\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":370,\"width\":640,\"height\":350,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Hudson Cocina - GA4.Mes\"}],\"Series\":[{\"queryRef\":\"Hudson Cocina - GA4.source\"}],\"Y\":[{\"queryRef\":\"Sum(Hudson Cocina - GA4.sessions)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"Hudson Cocina - GA4\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Mes\"},\"Name\":\"Hudson Cocina - GA4.Mes\",\"NativeReferenceName\":\"Mes\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"source\"},\"Name\":\"Hudson Cocina - GA4.source\",\"NativeReferenceName\":\"source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"sessions\"}},\"Function\":0},\"Name\":\"Sum(Hudson Cocina - GA4.sessions)\",\"NativeReferenceName\":\"Suma de sessions\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Mes\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 350.00,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 370.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

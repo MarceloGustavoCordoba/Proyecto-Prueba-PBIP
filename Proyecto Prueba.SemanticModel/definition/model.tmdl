@@ -1,0 +1,21 @@
+model Model
+	culture: es-AR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-AR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.129.905.0 (24.05)
+
+annotation PBI_QueryOrder = ["Meses","Hudson Cocina - GA4"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Meses
+ref table 'Hudson Cocina - GA4'
+
+ref cultureInfo es-AR
+

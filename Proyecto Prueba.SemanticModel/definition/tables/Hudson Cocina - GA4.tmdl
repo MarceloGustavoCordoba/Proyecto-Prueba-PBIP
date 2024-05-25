@@ -1,0 +1,70 @@
+table 'Hudson Cocina - GA4'
+	lineageTag: 7fa735bf-f67e-4d3e-b7ea-71da13e3d255
+
+	column sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 27cd81e2-0709-44b3-a751-46ba6e158488
+		summarizeBy: sum
+		sourceColumn: sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2a7bf93a-c043-49d2-a93d-1942eb8112da
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column browser
+		dataType: string
+		lineageTag: 727f557d-adc0-4dc7-b7de-7742904a50e4
+		summarizeBy: none
+		sourceColumn: browser
+
+		annotation SummarizationSetBy = Automatic
+
+	column deviceCategory
+		dataType: string
+		lineageTag: d45e60d9-0097-4e64-953f-70d13333e12a
+		summarizeBy: none
+		sourceColumn: deviceCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: ed2e9857-6a5c-42b0-ad03-f6bc851e5806
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = DATE(YEAR('Hudson Cocina - GA4'[date]),MONTH('Hudson Cocina - GA4'[date]),1)
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5ae24df1-3b5d-4fad-beb0-6f66fda4a8cd
+		summarizeBy: none
+		isDataTypeInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Hudson Cocina - GA4' = m
+		mode: import
+		source =
+				let
+				    Origen = PowerPlatform.Dataflows(null),
+				    Workspaces = Origen{[Id="Workspaces"]}[Data],
+				    #"f4965ca4-e723-4d97-a6a7-359173945f66" = Workspaces{[workspaceId="f4965ca4-e723-4d97-a6a7-359173945f66"]}[Data],
+				    #"b1a13d2d-9d0b-46c8-8767-19d7a5b2d5ee" = #"f4965ca4-e723-4d97-a6a7-359173945f66"{[dataflowId="b1a13d2d-9d0b-46c8-8767-19d7a5b2d5ee"]}[Data],
+				    #"Hudson Cocina - GA4_" = #"b1a13d2d-9d0b-46c8-8767-19d7a5b2d5ee"{[entity="Hudson Cocina - GA4",version=""]}[Data]
+				in
+				    #"Hudson Cocina - GA4_"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,4 @@
+relationship 471073ed-6561-7e92-131f-f2482c4a1c4c
+	fromColumn: 'Hudson Cocina - GA4'.Mes
+	toColumn: Meses.Mes_Fecha
+
